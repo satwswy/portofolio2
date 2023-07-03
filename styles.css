@@ -1,0 +1,89 @@
+/* styles.css */
+
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 24px;
+  margin: 0;
+}
+
+h2 {
+  font-size: 20px;
+  margin: 20px 0 10px;
+}
+
+p {
+  font-size: 16px;
+  margin: 0;
+}
+
+section {
+  padding: 40px;
+}
+
+a {
+  color: #333;
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+}
+
+/* Projects Section */
+.project {
+  margin-bottom: 40px;
+}
+
+.project h3 {
+  font-size: 18px;
+}
+
+.project img {
+  max-width: 100%;
+  margin-top: 10px;
+}
+
+/* Skills Section */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Testimonials Section */
+.testimonial {
+  margin-bottom: 40px;
+}
+
+blockquote {
+  font-style: italic;
+}
+
+cite {
+  font-size: 14px;
+}
+
+/* Contact Section */
+#contact {
+  background-color: #f4f4f4;
+  text-align: center;
+  padding: 40px;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
