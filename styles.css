@@ -1,17 +1,23 @@
 /* styles.css */
 
-/* General Styles */
+/* Global styles */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
 }
 
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header styles */
 header {
   background-color: #333;
   color: #fff;
-  padding: 20px;
-  text-align: center;
+  padding: 10px;
 }
 
 h1 {
@@ -19,71 +25,51 @@ h1 {
   margin: 0;
 }
 
-h2 {
-  font-size: 20px;
-  margin: 20px 0 10px;
-}
-
-p {
-  font-size: 16px;
+nav ul {
+  list-style: none;
   margin: 0;
+  padding: 0;
 }
 
-section {
-  padding: 40px;
-}
-
-a {
-  color: #333;
+nav ul li {
   display: inline-block;
-  margin-top: 10px;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: #fff;
   text-decoration: none;
 }
 
-/* Projects Section */
+/* Project styles */
 .project {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .project h3 {
   font-size: 18px;
+  margin: 0;
 }
 
-.project img {
-  max-width: 100%;
-  margin-top: 10px;
+.project p {
+  margin: 10px 0;
 }
 
-/* Skills Section */
-ul {
-  list-style-type: none;
-  padding: 0;
+/* About section styles */
+#about {
+  margin-top: 40px;
 }
 
-/* Testimonials Section */
-.testimonial {
-  margin-bottom: 40px;
-}
-
-blockquote {
-  font-style: italic;
-}
-
-cite {
-  font-size: 14px;
-}
-
-/* Contact Section */
+/* Contact section styles */
 #contact {
-  background-color: #f4f4f4;
-  text-align: center;
-  padding: 40px;
+  margin-top: 40px;
 }
 
-/* Footer */
+/* Footer styles */
 footer {
-  background-color: #333;
-  color: #fff;
-  padding: 20px;
+  background-color: #f4f4f4;
+  color: #333;
+  padding: 10px;
   text-align: center;
 }
+
