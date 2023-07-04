@@ -1,27 +1,35 @@
 /* styles.css */
-
+html {
+  scroll-behavior: smooth;
+}
 /* Global styles */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
 }
 
 .container {
   max-width: 960px;
   margin: 0 auto;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
 }
 
 /* Header styles */
 header {
   background-color: #333;
   color: #fff;
-  padding: 10px;
+  padding: 20px;
+  text-align: center;
 }
 
 h1 {
-  font-size: 24px;
+  font-size: 32px;
   margin: 0;
 }
 
@@ -39,25 +47,91 @@ nav ul li {
 nav ul li a {
   color: #fff;
   text-decoration: none;
+  font-size: 18px;
+  padding: 10px;
+}
+
+nav ul li a:hover {
+  background-color: #555;
 }
 
 /* Project styles */
 .project {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .project h3 {
-  font-size: 18px;
+  font-size: 24px;
   margin: 0;
+  margin-bottom: 10px;
+  color: #333;
 }
 
 .project p {
-  margin: 10px 0;
+  margin: 0;
+  margin-bottom: 20px;
+  color: #777;
+  line-height: 1.5;
+}
+
+.project a {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.project a:hover {
+  text-decoration: underline;
 }
 
 /* About section styles */
 #about {
   margin-top: 40px;
+}
+#skills{
+  margin-top: 50px;
+}
+#profile-image{
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.about-info {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.about-info .column {
+  flex-basis: 100%;
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;align-items: center;
+  gap: 25px;
+  font-size: 1.3rem;
+}
+.about-info .column ul li {
+  margin-top: 30px;
+}
+.about-info .column p{
+line-height: 1.8;
+}
+.about-info h2 {
+  font-size: 24px;
+  margin: 0;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.about-info p {
+  margin: 0;
+  margin-bottom: 20px;
+  color: #777;
+  line-height: 1.5;
 }
 
 /* Contact section styles */
@@ -65,11 +139,78 @@ nav ul li a {
   margin-top: 40px;
 }
 
+.contact-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.contact-form .form-group {
+  flex-basis: 50%;
+  padding: 0 10px;
+}
+
+.contact-form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.contact-form button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #555;
+}
+
 /* Footer styles */
 footer {
-  background-color: #f4f4f4;
-  color: #333;
-  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
   text-align: center;
 }
+
+.footer-social {
+  margin-top: 20px;
+}
+
+.footer-social ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-social ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.footer-social ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.footer-social ul li a:hover {
+  color: #ccc;
+}
+
+
 
